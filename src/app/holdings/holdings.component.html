@@ -1,0 +1,31 @@
+<h2>Holdings</h2>
+<ngx-charts-advanced-pie-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="holdings"
+  [gradient]="gradient"
+  [valueFormatting]="dollarFormatting">
+  <ng-template #tooltipTemplate let-model="model">
+    <div>
+      {{ model.name }}
+    </div>
+    <div>
+      {{ dollarFormatting(model.value) }}
+    </div>
+  </ng-template>
+</ngx-charts-advanced-pie-chart>
+<ngx-charts-advanced-pie-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="holdings"
+  [gradient]="gradient"
+  [valueFormatting]="dollarFormatting">
+  <ng-template #tooltipTemplate let-model="model">
+    <div>
+      {{ model.name }}
+    </div>
+    <div>
+      {{ dollarFormatting(model.value) }}
+    </div>
+  </ng-template>
+</ngx-charts-advanced-pie-chart>
